@@ -6,6 +6,3 @@ RUN curl -s "http://festvox.org/packed/festival/2.4/voices/festvox_cmu_us_awb_cg
     && echo "(set! voice_default 'voice_cmu_us_awb_cg)" >> /etc/festival.scm
 
 COPY speak.sh /usr/local/bin/speak
-
-ENTRYPOINT [ "speak" ]
-CMD [ "Hello World" ]
